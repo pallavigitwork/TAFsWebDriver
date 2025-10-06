@@ -1,0 +1,124 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Demosite</title>
+<base href="https://5elementslearning.dev/demosite/">
+<link rel="stylesheet" type="text/css" href="ext/jquery/ui/redmond/jquery-ui-1.8.22.css">
+<script type="text/javascript" src="ext/jquery/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="ext/jquery/ui/jquery-ui-1.8.22.min.js"></script>
+
+<script type="text/javascript">
+// fix jQuery 1.8.0 and jQuery UI 1.8.22 bug with dialog buttons; http://bugs.jqueryui.com/ticket/8484
+if ( $.attrFn ) { $.attrFn.text = true; }
+</script>
+
+
+<script type="text/javascript" src="ext/jquery/bxGallery/jquery.bxGallery.1.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="ext/jquery/fancybox/jquery.fancybox-1.3.4.css">
+<script type="text/javascript" src="ext/jquery/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="ext/960gs/960_24_col.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="robots" content="noindex,follow">
+</head>
+<body>
+
+<div id="bodyWrapper" class="container_24">
+
+
+<div id="header" class="grid_24">
+  <div id="storeLogo"><a href="https://5elementslearning.dev/demosite/index.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8"><img src="images/store_logo.png" alt="Demosite" title="Demosite" width="182" height="56"></a></div>
+
+  <div id="headerShortcuts" class="ui-buttonset">
+<span class=""><a id="tdb1" href="https://5elementslearning.dev/demosite/shopping_cart.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8" class="ui-button ui-widget ui-state-default ui-button-text-icon-primary ui-priority-secondary ui-corner-left" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-cart"></span><span class="ui-button-text">Cart Contents</span></a></span><script type="text/javascript">$("#tdb1").button({icons:{primary:"ui-icon-cart"}}).addClass("ui-priority-secondary").parent().removeClass("tdbLink");</script><span class=""><a id="tdb2" href="https://5elementslearning.dev/demosite/checkout_shipping.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8" class="ui-button ui-widget ui-state-default ui-button-text-icon-primary ui-priority-secondary" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-triangle-1-e"></span><span class="ui-button-text">Checkout</span></a></span><script type="text/javascript">$("#tdb2").button({icons:{primary:"ui-icon-triangle-1-e"}}).addClass("ui-priority-secondary").parent().removeClass("tdbLink");</script><span class=""><a id="tdb3" href="https://5elementslearning.dev/demosite/account.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8" class="ui-button ui-widget ui-state-default ui-button-text-icon-primary ui-priority-secondary ui-corner-right" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-person"></span><span class="ui-button-text">My Account</span></a></span><script type="text/javascript">$("#tdb3").button({icons:{primary:"ui-icon-person"}}).addClass("ui-priority-secondary").parent().removeClass("tdbLink");</script>  </div>
+
+<script type="text/javascript">
+  $("#headerShortcuts").buttonset();
+</script>
+</div>
+
+<div class="grid_24 ui-widget infoBoxContainer">
+  <div class="ui-widget-header infoBoxHeading">&nbsp;&nbsp;<a href="https://5elementslearning.dev" class="headerNavigation">Top</a> » <a href="https://5elementslearning.dev/demosite/index.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8" class="headerNavigation">Catalog</a> » <a href="https://5elementslearning.dev/demosite/login.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8" class="headerNavigation">Login</a></div>
+</div>
+
+
+<div id="bodyContent" class="grid_16 push_4">
+
+<h1>Welcome, Please Sign In</h1>
+
+
+<div class="contentContainer" style="width: 45%; float: left;">
+  <h2>New Customer</h2>
+
+  <div class="contentText">
+    <p>I am a new customer.</p>
+    <p>By creating an account at Demosite you will be able to shop faster, be up to date on an orders status, and keep track of the orders you have previously made.</p>
+
+    <p align="right"><span class=""><a id="tdb4" href="https://5elementslearning.dev/demosite/create_account.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary ui-priority-secondary" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-triangle-1-e"></span><span class="ui-button-text">Continue</span></a></span><script type="text/javascript">$("#tdb4").button({icons:{primary:"ui-icon-triangle-1-e"}}).addClass("ui-priority-secondary").parent().removeClass("tdbLink");</script></p>
+  </div>
+</div>
+
+<div class="contentContainer" style="width: 45%; float: left; border-left: 1px dashed #ccc; padding-left: 3%; margin-left: 3%;">
+  <h2>Returning Customer</h2>
+
+  <div class="contentText">
+    <p>I am a returning customer.</p>
+
+    <form name="login" action="https://5elementslearning.dev/demosite/login.php?action=process&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8" method="post"><input type="hidden" name="formid" value="4ba2509aeedc372ee6f84043c984dc59">
+    <table border="0" cellspacing="0" cellpadding="2" width="100%">
+      <tbody><tr>
+        <td class="fieldKey">E-Mail Address:</td>
+        <td class="fieldValue"><input type="text" name="email_address"></td>
+      </tr>
+      <tr>
+        <td class="fieldKey">Password:</td>
+        <td class="fieldValue"><input type="password" name="password" maxlength="40"></td>
+      </tr>
+    </tbody></table>
+
+    <p><a href="https://5elementslearning.dev/demosite/password_forgotten.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8">Password forgotten? Click here.</a></p>
+
+    <p align="right"><span class=""><button id="tdb5" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary ui-priority-primary" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-key"></span><span class="ui-button-text">Sign In</span></button></span><script type="text/javascript">$("#tdb5").button({icons:{primary:"ui-icon-key"}}).addClass("ui-priority-primary").parent().removeClass("tdbLink");</script></p>
+
+    </form>
+  </div>
+</div>
+
+
+</div> <!-- bodyContent //-->
+
+
+<div id="columnLeft" class="grid_4 pull_16">
+  <div class="ui-widget infoBoxContainer">  <div class="ui-widget-header infoBoxHeading">Categories</div>  <div class="ui-widget-content infoBoxContents"><a href="https://5elementslearning.dev/demosite/index.php?cPath=1&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Hardware-&gt;</a>&nbsp;(6)<br><a href="https://5elementslearning.dev/demosite/index.php?cPath=2&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Software-&gt;</a>&nbsp;(4)<br><a href="https://5elementslearning.dev/demosite/index.php?cPath=3&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">DVD Movies-&gt;</a>&nbsp;(17)<br><a href="https://5elementslearning.dev/demosite/index.php?cPath=21&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Gadgets</a>&nbsp;(1)<br></div></div>
+<div class="ui-widget infoBoxContainer">  <div class="ui-widget-header infoBoxHeading">Manufacturers</div>  <div class="ui-widget-content infoBoxContents"><form name="manufacturers" action="https://5elementslearning.dev/demosite/index.php" method="get"><select name="manufacturers_id" onchange="this.form.submit();" size="1" style="width: 100%"><option value="" selected="selected">Please Select</option><option value="6">Canon</option><option value="4">Fox</option><option value="8">GT Interactive</option><option value="9">Hewlett Packard</option><option value="5">Logitech</option><option value="1">Matrox</option><option value="2">Microsoft</option><option value="10">Samsung</option><option value="7">Sierra</option><option value="3">Warner</option></select><input type="hidden" name="osCsid" value="c698d6cb82c710fa075e1970ee1f75d8"></form></div></div>
+<div class="ui-widget infoBoxContainer">  <div class="ui-widget-header infoBoxHeading">Quick Find</div>  <div class="ui-widget-content infoBoxContents" style="text-align: center;">    <form name="quick_find" action="https://5elementslearning.dev/demosite/advanced_search_result.php" method="get">    <input type="text" name="keywords" size="10" maxlength="30" style="width: 75%">&nbsp;<input type="hidden" name="search_in_description" value="1"><input type="hidden" name="osCsid" value="c698d6cb82c710fa075e1970ee1f75d8"><input type="image" src="includes/languages/english/images/buttons/button_quick_find.gif" alt="Quick Find" title=" Quick Find "><br>Use keywords to find the product you are looking for.<br><a href="https://5elementslearning.dev/demosite/advanced_search.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8"><strong>Advanced Search</strong></a>    </form>  </div></div>
+<div class="ui-widget infoBoxContainer">  <div class="ui-widget-header infoBoxHeading"><a href="https://5elementslearning.dev/demosite/products_new.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8">What's New?</a></div>  <div class="ui-widget-content infoBoxContents" style="text-align: center;"><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=20&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8"><img src="images/dvd/beloved.gif" alt="Beloved" title="Beloved" width="100" height="80"></a><br><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=20&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Beloved</a><br>$54.99</div></div>
+<div class="ui-widget infoBoxContainer">  <div class="ui-widget-header infoBoxHeading">Information</div>  <div class="ui-widget-content infoBoxContents">    <a href="https://5elementslearning.dev/demosite/shipping.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8">Shipping &amp; Returns</a><br>    <a href="https://5elementslearning.dev/demosite/privacy.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8">Privacy Notice</a><br>    <a href="https://5elementslearning.dev/demosite/conditions.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8">Conditions of Use</a><br>    <a href="https://5elementslearning.dev/demosite/contact_us.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8">Contact Us</a>  </div></div></div>
+
+
+<div id="columnRight" class="grid_4">
+  <div class="ui-widget infoBoxContainer">  <div class="ui-widget-header infoBoxHeading"><a href="https://5elementslearning.dev/demosite/shopping_cart.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8">Shopping Cart</a></div>  <div class="ui-widget-content infoBoxContents">0 items</div></div>
+<div class="ui-widget infoBoxContainer">  <div class="ui-widget-header infoBoxHeading">Bestsellers</div>  <div class="ui-widget-content infoBoxContents"><ol style="margin: 0; padding-left: 25px;"><li><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=1&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Matrox G200 MMS</a></li><li><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=22&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Unreal Tournament</a></li><li><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=28&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Samsung Galaxy Tab</a></li><li><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=16&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Courage Under Fire</a></li><li><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=26&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Microsoft IntelliMouse Explorer</a></li><li><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=12&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Die Hard With A Vengeance</a></li><li><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=25&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Microsoft Internet Keyboard PS/2</a></li><li><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=27&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Hewlett Packard LaserJet 1100Xi</a></li><li><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=19&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">There's Something About Mary</a></li><li><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=21&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">SWAT 3: Close Quarters Battle</a></li></ol></div></div>
+<div class="ui-widget infoBoxContainer">  <div class="ui-widget-header infoBoxHeading"><a href="https://5elementslearning.dev/demosite/specials.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8">Specials</a></div>  <div class="ui-widget-content infoBoxContents" style="text-align: center;"><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=5&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8"><img src="images/dvd/blade_runner.gif" alt="Blade Runner - Director's Cut" title="Blade Runner - Director's Cut" width="100" height="80"></a><br><a href="https://5elementslearning.dev/demosite/product_info.php?products_id=5&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8">Blade Runner - Director's Cut</a><br><del>$35.99</del><br><span class="productSpecialPrice">$30.00</span></div></div>
+<div class="ui-widget infoBoxContainer">  <div class="ui-widget-header infoBoxHeading"><a href="https://5elementslearning.dev/demosite/reviews.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8">Reviews</a></div>  <div class="ui-widget-content infoBoxContents">There are currently no product reviews</div></div>
+<div class="ui-widget infoBoxContainer">  <div class="ui-widget-header infoBoxHeading">Currencies</div>  <div class="ui-widget-content infoBoxContents">    <form name="currencies" action="https://5elementslearning.dev/demosite/login.php" method="get">    <select name="currency" onchange="this.form.submit();" style="width: 100%"><option value="USD" selected="selected">U.S. Dollar</option><option value="EUR">Euro</option></select><input type="hidden" name="osCsid" value="c698d6cb82c710fa075e1970ee1f75d8"></form>  </div></div></div>
+
+
+
+<div class="grid_24 footer">
+  <p align="center">Copyright © 2025 <a href="https://5elementslearning.dev/demosite/index.php?osCsid=c698d6cb82c710fa075e1970ee1f75d8">Demosite</a><br>Powered by <a href="http://www.oscommerce.com" target="_blank">osCommerce</a></p>
+</div>
+
+
+<div class="grid_24" style="text-align: center; padding-bottom: 20px;">
+  <a href="https://5elementslearning.dev/demosite/redirect.php?action=banner&amp;goto=1&amp;osCsid=c698d6cb82c710fa075e1970ee1f75d8" target="_blank"><img src="images/banners/oscommerce.gif" alt="osCommerce" title="osCommerce" width="468" height="60"></a></div>
+
+
+<script type="text/javascript">
+$('.productListTable tr:nth-child(even)').addClass('alt');
+</script>
+
+</div> <!-- bodyWrapper //-->
+
+
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>
